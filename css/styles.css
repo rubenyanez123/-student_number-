@@ -12,8 +12,8 @@ header {
   width: 100%;
   background-color: aquamarine;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   height: 10em;
   border-bottom: 2px solid black;
   padding: 0 1em;
