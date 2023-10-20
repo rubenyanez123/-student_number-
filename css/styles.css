@@ -12,7 +12,7 @@ header {
   width: 100%;
   background-color: aquamarine;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   height: 10em;
   border-bottom: 2px solid black;
@@ -33,7 +33,6 @@ h2 {
 .logo-img {
   width: 8em;
   height: 8em;
-  padding-top: 10;
   object-fit: contain;
 }
 
