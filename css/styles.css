@@ -42,6 +42,12 @@ aside {
   background-color: orange;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .nav-items {
   display: flex;
   flex-direction: column;
