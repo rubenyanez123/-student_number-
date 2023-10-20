@@ -43,9 +43,7 @@ aside {
 }
 
 main {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  text-align: center;
 }
 
 .nav-items {
