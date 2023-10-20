@@ -28,13 +28,13 @@ h2 {
 .logo {
   width: 8em;
   height: 8em;
-  padding: 10em;
 }
 
 .logo-img {
   width: 8em;
   height: 8em;
   object-fit: contain;
+  padding: 10em;
 }
 
 aside {
