@@ -59,7 +59,7 @@ aside {
 }
 
 article {
-  width: 8px;
+  max-width: 30%;
   height: auto;
   padding: 20px;
   background-color: rgb(233, 233, 233);
