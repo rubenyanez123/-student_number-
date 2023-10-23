@@ -37,7 +37,7 @@ h1 {
 }
 
 aside {
-  float: left;
+  position: fixed;
   width: 150px;
   height: 400vh;
   background-color: orange;
