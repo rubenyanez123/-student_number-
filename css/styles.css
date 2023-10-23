@@ -66,6 +66,6 @@ footer {
   left: 0px;
   height: 2em;
   background-color: aquamarine;
-  align-items: center;
+  text-align: center;
   justify-content: space-between;
 }
