@@ -73,8 +73,16 @@ aside {
   object-fit: contain;
 }
 
+.photo-img {
+  padding-top: 10px;
+  width: 8em;
+  height: 8em;
+  object-fit: contain;
+}
+
 main {
   float: right;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
