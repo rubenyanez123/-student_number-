@@ -37,12 +37,14 @@ h1 {
 }
 
 aside {
+  float: left;
   width: 150px;
   height: 400vh;
   background-color: orange;
 }
 
 main {
+  overflow: hidden;
   align-items: center;
   justify-content: flex-start;
 }
