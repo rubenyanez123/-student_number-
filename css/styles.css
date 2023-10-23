@@ -43,6 +43,7 @@ aside {
 }
 
 main {
+  float: right;
   align-items: center;
   justify-content: center;
 }
