@@ -53,21 +53,17 @@ aside {
 
 .articles {
   display: flex;
-
   flex-wrap: wrap;
-
   justify-content: space-between;
-
   padding: 20px;
 }
 
 article {
+  width: 8em;
+  height: auto;
   padding: 20px;
-
   background-color: rgb(233, 233, 233);
-
   flex-basis: calc(50% - 50px);
-
   margin-bottom: 20px;
 }
 
