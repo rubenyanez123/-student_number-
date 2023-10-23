@@ -27,18 +27,18 @@ h1 {
 }
 
 .home {
-  width: 8em;
-  height: 8em;
+  width: 4em;
+  height: 4em;
   padding-top: 10px;
 }
 
 .logo {
   width: 8em;
   height: 8em;
-  padding-top: 10px;
 }
 
 .logo-img {
+  padding-top: 10px;
   width: 8em;
   height: 8em;
   object-fit: contain;
