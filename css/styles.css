@@ -51,6 +51,26 @@ aside {
   background-color: orange;
 }
 
+.photos {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  padding: 20px;
+}
+
+.photo {
+  padding: 20px;
+
+  background-color: rgb(233, 233, 233);
+
+  flex-basis: calc(50% - 50px);
+
+  margin-bottom: 20px;
+}
+
 main {
   float: right;
   align-items: center;
