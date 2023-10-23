@@ -59,6 +59,8 @@ aside {
 }
 
 article {
+  width: 8px;
+  height: auto;
   padding: 20px;
   background-color: rgb(233, 233, 233);
   flex-basis: calc(50% - 50px);
