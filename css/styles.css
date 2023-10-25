@@ -40,12 +40,14 @@ h1 {
 }
 
 aside {
+  float: left;
   width: 150px;
   height: 400vh;
   background-color: orange;
 }
 
 .articles {
+  float: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
