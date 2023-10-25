@@ -52,21 +52,18 @@ aside {
 }
 
 .articles {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   padding: 20px;
 }
 
 article {
   padding: 20px;
   background-color: rgb(233, 233, 233);
-  margin-bottom: 20px;
 }
 
 main {
-  float: center;
   display: flex;
   align-items: center;
   justify-content: center;
