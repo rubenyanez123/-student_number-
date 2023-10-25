@@ -32,11 +32,6 @@ h1 {
   padding-top: 10px;
 }
 
-.logo {
-  width: 8em;
-  height: 8em;
-}
-
 .logo-img {
   padding-top: 10px;
   width: 8em;
@@ -81,12 +76,12 @@ main {
   padding: 0.5em;
 }
 
-.footer {
+footer {
   width: 100%;
   top: 10px;
   bottom: 10px;
   left: 0px;
-  height: 2em;
+  height: 5em;
   background-color: aquamarine;
   text-align: center;
   display: flex;
