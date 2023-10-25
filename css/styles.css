@@ -8,6 +8,15 @@
   font-family: "Times New Roman", sans-serif;
 }
 
+body {
+  background-color: rgb(
+    103,
+    196,
+    111
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(#6360e7, yellow, green);
+}
+
 header {
   width: 100%;
   background-color: aquamarine;
