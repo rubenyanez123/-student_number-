@@ -35,6 +35,14 @@ h1 {
   color: rgb(0, 0, 0);
 }
 
+h2 {
+  padding: 0.5em;
+}
+
+p {
+  padding: 0.5em;
+}
+
 .home {
   width: 4em;
   height: 4em;
@@ -65,7 +73,7 @@ aside {
 
 article {
   padding: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 .about {
