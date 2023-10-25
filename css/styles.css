@@ -58,7 +58,13 @@ article {
   background-color: rgb(255, 255, 255);
 }
 
+.about {
+  margin-top: 20px;
+}
+
 main {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
