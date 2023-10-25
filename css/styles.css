@@ -47,7 +47,7 @@ aside {
 }
 
 .articles {
-  float: center;
+  float: right;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -61,6 +61,7 @@ article {
 
 .about {
   margin-top: 20px;
+  float: center;
 }
 
 main {
