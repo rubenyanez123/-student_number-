@@ -14,12 +14,12 @@ body {
     196,
     111
   ); /* For browsers that do not support gradients */
-  background-image: linear-gradient(#6360e7, yellow, green);
+  background-image: url("file:///C:/Users/rbnya/Downloads/home%20page%20footer%20photo.jpg");
 }
 
 header {
   width: 100%;
-  background-color: aquamarine;
+  background-image: url("file:///C:/Users/rbnya/Downloads/home%20page%20footer%20photo.jpg");
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -33,14 +33,17 @@ h1 {
   background-color: rgba(255, 0, 0, 0);
   padding: 0.5em;
   color: rgb(0, 0, 0);
+  font-size: 350%;
 }
 
 h2 {
   padding: 0.5em;
+  font-size: 210%;
 }
 
 p {
   padding: 0.5em;
+  font-size: 175%;
 }
 
 .home {
@@ -72,8 +75,14 @@ aside {
 }
 
 article {
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 667px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about {
@@ -82,11 +91,10 @@ article {
 }
 
 main {
-  float: center;
   max-width: 800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1 fr);
   align-items: center;
   justify-content: center;
 }
@@ -116,4 +124,14 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0.1em;
+}
+
+.social-media-icons {
+  width: 9em;
+  height: 3em;
+  padding: 0.1em;
+}
+
+.nav-item .active {
+  color: blue;
 }
