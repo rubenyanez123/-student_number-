@@ -4,14 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/aboutUs.css" />
+    <link rel="shortcut icon" href="pictures/favicon.ico" />
     <title>Home</title>
   </head>
-  <body>
+  <body onload="showModal()">
+    <i id="modalbox">
+      <img src="pictures/cookie.png" title="cookie" class="cookie" />
+      <i>We use cookies to optimize user experience and content.</i>
+      <button type="button" onclick="closeModal()">Accept</button>
+      <img
+        src="pictures/close.png"
+        title="close-icon"
+        class="close-icon"
+        onclick="closeModal()"
+      />
+    </i>
     <header>
-      <img src="skate haarlem logo.jpg" alt="logo" class="logo-img" />
+      <img
+        src="pictures/skate-haarlem-logo.jpg"
+        title="logo"
+        class="logo-img"
+      />
       <h1>Welcome to SkateHaarlem!</h1>
       <i class="home">
-        <img src="Screenshot 2023-10-23 155947.png" alt="home" class="home" />
+        <img
+          src="pictures/Screenshot_2023-10-23_155947.png"
+          title="home"
+          class="home"
+        />
       </i>
     </header>
     <!-- navigation start -->
@@ -27,7 +47,9 @@
             >
           </li>
           <li class="nav-item">
-            <a href="BeforeStarting.html" class="nav-item__link">Before Starting</a>
+            <a href="BeforeStarting.html" class="nav-item__link"
+              >Before Starting</a
+            >
           </li>
           <li class="nav-item">
             <a href="WhereDoIStart.html" class="nav-item__link"
@@ -49,77 +71,70 @@
       </nav>
     </aside>
     <main>
-      <section class="articles">
-        <article>
-          <img
-            src="hoofddorp skatepark.jpg"
-            width="100%"
-            height="auto"
-            alt="Article 1"
-          />
-        </article>
-        <article>
-          <img
-            src="home page photo 1.jpg"
-            width="100%"
-            height="auto"
-            alt="Article 2"
-          />
-        </article>
-        <article>
-          <img
-            src="home page photo 2.jpg"
-            width="100%"
-            height="auto"
-            alt="Article 3"
-          />
-        </article>
-        <article>
-          <img
-            src="home page photo 3.jpg"
-            width="100%"
-            height="auto"
-            alt="Article 4"
-          />
-        </article>
+      <section class="figures">
+        <figure>
+          <img src="pictures/hoofddorp-skatepark.jpg" title="Figure 1" />
+        </figure>
+        <figure>
+          <img src="pictures/home-page-photo-1.jpg" title="Figure 2" />
+        </figure>
+        <figure>
+          <img src="pictures/home-page-photo-2.jpg" title="Figure 3" />
+        </figure>
+        <figure>
+          <img src="pictures/home-page-photo-3.jpg" title="Figure 4" />
+        </figure>
       </section>
       <br />
       <section class="About">
         <h2>About Us</h2>
         <img
-          src="skate protest june 2020.jpg"
-          alt="skate protest june 2020"
-          width="100%"
-          height="auto"
+          src="pictures/skate-protest-june-2020.jpg"
+          title="skate protest june 2020"
         />
         <br />
-        <p
-          >Skate Haarlem is a website that was created in the fall of 2023 by
-          Ruben Yanez, a Dutch-American student at Inholland Hogeschool Haarlem.
-          He hopes to get more people interested in his passion.</p1
-        >
         <br />
-        <h2>Our Mission</h2>
-        <p
-          >Bring skateboarding and its footprint in Haarlem to the attention of
-          international students in the area. in many ways, skateboarding has a
-          lot of potential to be bigger than it is. It is a fun and healthy
-          activity that I think many would like to learn how to do, but
-          unfortunately many shy away from it because of the intimidation that
-          comes along with A) the sometimes-judgemental community, and B) the
-          risk factor of it, whether it be because of stories these students
-          have heard of people injuring themselves or videos they see on the
-          internet. My goal is to lessen these fears and inspire people to get
-          on the board, as well as get to know Haarlem better and even see it in
-          a new light.</p2
-        >
+        <br />
+        <h3>
+          Skate Haarlem is a website that was created in the fall of 2023 by
+          Ruben Yanez, a Dutch-American student at Inholland Hogeschool Haarlem.
+          He hopes to get more people interested in his passion.
+        </h3>
+        <h3 class="mission">
+          Our mission is to bring skateboarding and its footprint in Haarlem to
+          the attention of international students in the area. in many ways,
+          skateboarding has a lot of potential to be bigger than it is. It is a
+          fun and healthy activity that I think many would like to learn how to
+          do, but unfortunately many shy away from it because of the
+          intimidation that comes along with A) the sometimes-judgemental
+          community, and B) the risk factor of it, whether it be because of
+          stories these students have heard of people injuring themselves or
+          videos they see on the internet. My goal is to lessen these fears and
+          inspire people to get on the board, as well as get to know Haarlem
+          better and even see it in a new light.
+        </h3>
       </section>
     </main>
     <!-- navigation end -->
     <footer>
-      <p1>© 2023</p1>
-      <p2>privacy policy</p2>
-      <img src="social media icons.jpg" alt="social media icons" class="social-media-icons">
+      <p>© 2023</p>
+      <p>privacy policy</p>
+      <img
+        src="pictures/social-media-icons.jpg"
+        title="social media icons"
+        class="social-media-icons"
+      />
     </footer>
+    <script>
+      let modalBox = document.getElementById("modalbox");
+      function showModal() {
+        setTimeout(() => {
+          modalBox.style.display = "block";
+        }, 1000);
+      }
+      function closeModal() {
+        modalBox.style.display = "none";
+      }
+    </script>
   </body>
 </html>

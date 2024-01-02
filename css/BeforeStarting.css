@@ -29,6 +29,7 @@ header {
 }
 
 h1 {
+  line-height: normal;
   background-color: rgba(255, 0, 0, 0);
   padding: 0.5em;
   color: rgb(0, 0, 0);
@@ -36,29 +37,33 @@ h1 {
 }
 
 h2 {
+  line-height: normal;
   padding: 0.5em;
   font-size: 210%;
 }
 
 h3 {
+  line-height: normal;
   font-size: 2em;
   color: red;
 }
 
+.helmet {
+  text-transform: uppercase;
+}
+
 h4 {
+  line-height: normal;
   font-size: 1.5em;
 }
 
 h5 {
+  line-height: normal;
   font-size: 1.5em;
 }
 
-p {
-  padding: 0.5em;
-  font-size: 140%;
-}
-
 .text {
+  line-height: normal;
   text-align: start;
   padding-left: 20px;
 }
@@ -70,6 +75,7 @@ p {
 }
 
 .logo-img {
+  z-index: 1;
   padding-top: 10px;
   width: 8em;
   height: 8em;
@@ -78,24 +84,29 @@ p {
 
 aside {
   float: left;
-  width: 150px;
+  width: 180px;
   height: 400vh;
   background-color: orange;
 }
 
 .articles {
-  max-width: 800px;
-  float: center;
+  position: static;
+  max-width: 100%;
   display: grid;
-  justify-content: space-evenly;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
+  gap: 3%;
+  padding: 3%;
 }
 
 article {
   padding: 10px;
   background-color: aquamarine;
+}
+
+img {
+  z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 667px) {
@@ -104,27 +115,35 @@ article {
   }
 }
 
+@media (max-width: 400px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
+}
+
 .about {
   margin-top: 20px;
-  float: center;
 }
 
 main {
-  max-width: 252%;
-  float: center;
+  max-width: 75%;
   margin: 0 auto;
   align-items: center;
   text-align: center;
 }
 
 .nav-items {
+  position: fixed;
+}
+
+.ul.nav-items > li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .nav-item {
-  margin: 0.5em 0;
+  margin: 1em 0;
   text-align: center;
   padding: 0.5em;
 }
@@ -151,4 +170,8 @@ footer {
 
 .nav-item .active {
   color: blue;
+}
+
+.nav-item:hover {
+  background-color: yellow;
 }

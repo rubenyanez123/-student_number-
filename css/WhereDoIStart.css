@@ -23,6 +23,7 @@ header {
 }
 
 h1 {
+  line-height: normal;
   background-color: rgba(255, 0, 0, 0);
   padding: 0.5em;
   color: rgb(0, 0, 0);
@@ -30,13 +31,21 @@ h1 {
 }
 
 h2 {
-  padding: 0.5em;
-  font-size: 210%;
-}
-
-p {
+  line-height: normal;
   padding: 0.5em;
   font-size: 175%;
+}
+
+strong {
+  line-height: normal;
+  padding: 0.3em;
+  font-size: 175%;
+  font-weight: lighter;
+}
+
+.scary::first-letter {
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .home {
@@ -46,6 +55,7 @@ p {
 }
 
 .logo-img {
+  z-index: 1;
   padding-top: 10px;
   width: 8em;
   height: 8em;
@@ -54,13 +64,12 @@ p {
 
 aside {
   float: left;
-  width: 150px;
+  width: 180px;
   height: 400vh;
   background-color: orange;
 }
 
 .articles {
-  float: center;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -72,7 +81,19 @@ article {
   background-color: rgb(255, 255, 255);
 }
 
+img {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 667px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
   .articles {
     grid-template-columns: 1fr;
   }
@@ -82,21 +103,24 @@ main {
   max-width: 800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1 fr);
   align-items: center;
   justify-content: center;
 }
 
-.nav-items {
+.ul.nav-items > li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .nav-item {
-  margin: 0.5em 0;
+  margin: 1em 0;
   text-align: center;
   padding: 0.5em;
+}
+
+.nav-items {
+  position: fixed;
 }
 
 footer {
@@ -122,4 +146,8 @@ footer {
 
 .nav-item .active {
   color: blue;
+}
+
+.nav-item:hover {
+  background-color: yellow;
 }
